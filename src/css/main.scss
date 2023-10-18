@@ -349,6 +349,7 @@ section {
                position: relative;
                background-color: var(--color-grey-4);
                margin-left: 1rem;
+               border-radius: 10px;
                span {
                   position: absolute;
                   left: 0;
@@ -356,8 +357,39 @@ section {
                   transition: all 0.6s ease-in-out;
                   background-color: var(--color-secondary);
                   height: 100%;
+                  border-radius: 10px;
                }
+
             }
+            
+            /*progress bar percentages*/
+            .web-development{
+               width: 80%;
+            }
+
+            .app-development {
+               width: 75%;
+            }
+            .javascript{
+               width: 90%;
+            }
+
+            .nodejs{
+               width: 75%;
+            }
+            .react{
+               width: 75%;
+            }
+            .cpp{
+               width: 70%;
+            }
+            .version-control{
+               width: 90%;
+            }
+            .problem-solving{
+               width: 85%;
+            }
+
          }
       }
    }

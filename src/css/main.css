@@ -318,6 +318,7 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
+  /*progress bar percentages*/
 }
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
   color: var(--color-grey-2);
@@ -328,6 +329,7 @@ section {
   position: relative;
   background-color: var(--color-grey-4);
   margin-left: 1rem;
+  border-radius: 10px;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress span {
   position: absolute;
@@ -336,6 +338,31 @@ section {
   transition: all 0.6s ease-in-out;
   background-color: var(--color-secondary);
   height: 100%;
+  border-radius: 10px;
+}
+.about-stats .progress-bars .progress-bar .progress-con .web-development {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .app-development {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .javascript {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .nodejs {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .react {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .cpp {
+  width: 70%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .version-control {
+  width: 90%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .problem-solving {
+  width: 85%;
 }
 
 .stat-title {
