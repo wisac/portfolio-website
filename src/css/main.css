@@ -168,11 +168,38 @@ section {
 }
 .header-content .header-left .img-container {
   border-radius: var(--br-sm-2);
-  height: 80%;
-  width: 80%;
-  margin-left: 4rem;
-  background-color: var(--color-primary);
+  height: 90%;
+  width: 70%;
+  margin-left: 2rem;
+  background-color: var(--color-grey-6);
   transition: all 0.6s ease-in-out;
+}
+.header-content .header-left .img-container:hover {
+  animation: bounce 1s ease-out;
+  background-color: var(--color-primary);
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-40px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 .header-content .header-left .img-container .profile-image {
   width: 100%;
