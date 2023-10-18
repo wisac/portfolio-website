@@ -14,6 +14,8 @@
   --gradient-primary: var(--color-primary), var(--color-secondary);
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.5);
+  --box-shadow-2: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  --box-shadow-3: 1px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
@@ -229,7 +231,60 @@ section {
   line-height: 2rem;
 }
 
-/*btn */
+/* About section*/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
+.about-container .about-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.about-container .about-right .about-item {
+  border: 2px solid var(--color-grey-3);
+  box-shadow: var(--box-shadow-2);
+  border-radius: 10px;
+  transition: all 0.6s ease-in-out;
+}
+.about-container .about-right .about-item:hover {
+  box-shadow: var(--box-shadow-3);
+  cursor: default;
+  transform: translateY(-5px);
+  border: 2px solid var(--color-secondary);
+}
+.about-container .about-right .about-item .about-text {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-container .about-right .about-item .about-text .large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+.about-container .about-right .about-item .about-text .small-text {
+  padding-left: 3rem;
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--color-grey-1);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.about-container .about-right .about-item .about-text .small-text::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2px;
+  background-color: var(--color-grey-5);
+}
+
+/* independent components */
 .download-container {
   display: flex;
   align-self: flex-start;
@@ -271,4 +326,26 @@ section {
   height: 100%;
   background-image: linear-gradient(to right, var(--gradient-primary));
   transform: translateX(0);
+}
+
+.section-title-container {
+  text-align: center;
+}
+.section-title-container h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.section-title-container h2 span {
+  color: var(--color-secondary);
+}
+.section-title-container h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  z-index: -1;
 }/*# sourceMappingURL=main.css.map */

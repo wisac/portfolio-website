@@ -2,7 +2,7 @@
   "name": "portfolio-website",
   "version": "1.0.0",
   "description": "My portfolio website",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
