@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="src/css/main.css">
-   <script src="https://kit.fontawesome.com/118ee32d60.js" crossorigin="anonymous"></script>
-  
-</head>
-<body class="main-content">
-   <header class="header section section-1  active"></header>
-   <main>
-      <section class="section section-2 about">
-         <i class="fa-solid fa-user fa-lg"></i>
-         <i class="fa-solid fa-home"></i>
-      </section>
-      <section class="section section-3 portfolio"></section>
-      <section class="section section-4 services"></section>
-      <section class="section section-5 contact"></section>
-   
-   </main>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="src/css/main.css" />
+      <script
+         src="https://kit.fontawesome.com/118ee32d60.js"
+         crossorigin="anonymous"
+      ></script>
+      <script src="src/js/app.js" type="module" defer></script>
+   </head>
+
+   <body class="main-content">
+      <header class="header section section-0 home active"></header>
+      <main>
+         <section class="section section-1 about"></section>
+         <section class="section section-2 portfolio"></section>
+         <section class="section section-3 services"></section>
+         <section class="section section-4 contact"></section>
+         <div class="navigators">
+            <div
+               class="navigator navigator-0 active-navigator"
+               data-section="0"
+            >
+               <i class="fa-solid fa-home"></i>
+            </div>
+            <div class="navigator navigator-1" data-section="1">
+               <i class="fa-solid fa-user fa-lg"></i>
+            </div>
+            <div class="navigator navigator-2" data-section="2">
+               <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="navigator navigator-3" data-section="3">
+               <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="navigator navigator-4" data-section="4">
+               <i class="fa-solid fa-envelope"></i>
+            </div>
+         </div>
+      </main>
+   </body>
 </html>
