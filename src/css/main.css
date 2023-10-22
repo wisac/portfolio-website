@@ -198,22 +198,23 @@ section {
 }
 .header-content .header-left .img-bg-shape {
   transition: all 0.6s ease-in-out;
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+  width: 450px;
+  height: 450px;
   left: 0;
   z-index: -1;
   background-color: var(--color-secondary);
-  -webkit-clip-path: polygon(0 0, 53% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 53% 0, 100% 100%, 0 100%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-content .header-left .img-container {
-  border-radius: var(--br-sm-2);
   height: 90%;
-  width: 70%;
+  width: 90%;
   background-color: var(--color-grey-6);
   transition: all 0.6s ease-in-out;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .header-content .header-left .img-container:hover {
   animation: bounce 1s ease-out;
