@@ -97,6 +97,17 @@
    }
 
 
+  .header-left {
+      .img-bg-shape {
+         width: 300px !important;
+         height:  300px !important;
+         margin-top: 1.5rem;
+      }
+
+     
+   }
+
+
 .about-container {
    grid-template-columns: 1fr;
    .about-right {
@@ -142,11 +153,6 @@
          display: none;
       }
 
-      .img-container {
-         margin: 0 !important;
-         width: 90% !important;
-         // border-radius: 50% !important;
-      }
    }
    .header-right {
       grid-row: 1;
@@ -160,7 +166,6 @@
 
    .header-content .header-left .profile-image {
       margin: 0 auto;
-      width: 10%;
    }
 
 
@@ -204,6 +209,16 @@
     .section {
       padding: 7rem 7rem;
    }
+
+
+     .header-left {
+      .img-bg-shape {
+         width: 30px !important;
+         height:  300px !important;
+      }
+
+     
+   }
 }
 
 
@@ -211,6 +226,7 @@
   .section {
       padding: 7rem 8rem;
    }
+
 
    header {
       padding: 0;
@@ -232,20 +248,18 @@
 
    .header-content {
       grid-template-columns: 1fr;
-      padding-bottom: 6rem;
-      padding-top: 2rem;
+      // padding-bottom: 6rem;
+      // padding-top: 2rem;
    }
 
    .header-left {
       .img-bg-shape {
-         display: none;
+         width: 350px !important;
+         height:  350px !important;
+         margin-top: 1.5rem;
       }
 
-      .img-container {
-         margin: 0 !important;
-         width: 90% !important;
-         // border-radius: 50% !important;
-      }
+     
    }
    .header-right {
       grid-row: 1;
@@ -259,7 +273,6 @@
 
    .header-content .header-left .profile-image {
       margin: 0 auto;
-      width: 10%;
    }
 
 

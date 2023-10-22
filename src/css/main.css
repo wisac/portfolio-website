@@ -210,8 +210,8 @@ section {
 }
 .header-content .header-left .img-bg-shape {
   transition: all 0.6s ease-in-out;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   left: 0;
   z-index: -1;
   background-color: var(--color-secondary);
@@ -737,7 +737,7 @@ section {
   align-items: center;
   justify-content: center;
   margin-left: 1rem;
-  transition: background-image 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .download-container .link-icons a:hover {
   background-image: linear-gradient(to right, var(--gradient-primary));
@@ -878,6 +878,11 @@ section {
   header .header-right h3 {
     font-size: 1.8rem !important;
   }
+  .header-left .img-bg-shape {
+    width: 300px !important;
+    height: 300px !important;
+    margin-top: 1.5rem;
+  }
   .about-container {
     grid-template-columns: 1fr;
   }
@@ -916,10 +921,6 @@ section {
   .header-left .img-bg-shape {
     display: none;
   }
-  .header-left .img-container {
-    margin: 0 !important;
-    width: 90% !important;
-  }
   .header-right {
     grid-row: 1;
     width: 90%;
@@ -930,7 +931,6 @@ section {
   }
   .header-content .header-left .profile-image {
     margin: 0 auto;
-    width: 10%;
   }
   .about-container {
     grid-template-columns: 1fr;
@@ -958,6 +958,10 @@ section {
   .section {
     padding: 7rem 7rem;
   }
+  .header-left .img-bg-shape {
+    width: 30px !important;
+    height: 300px !important;
+  }
 }
 @media screen and (width < 1300px) and (width > 924px) {
   .section {
@@ -975,15 +979,11 @@ section {
   }
   .header-content {
     grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-    padding-top: 2rem;
   }
   .header-left .img-bg-shape {
-    display: none;
-  }
-  .header-left .img-container {
-    margin: 0 !important;
-    width: 90% !important;
+    width: 350px !important;
+    height: 350px !important;
+    margin-top: 1.5rem;
   }
   .header-right {
     grid-row: 1;
@@ -995,7 +995,6 @@ section {
   }
   .header-content .header-left .profile-image {
     margin: 0 auto;
-    width: 10%;
   }
   /**/
   .about-container {
