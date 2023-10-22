@@ -21,7 +21,7 @@
 .light-mode {
   --color-primary: #f8f8ec;
   --color-secondary: #21bc81;
-  --color-white: #778088;
+  --color-white: #5d656b;
   --color-white2: rgb(156, 165, 173) 8;
   --color-black: #000;
   --color-grey0: #e9e3e3a6;
@@ -316,7 +316,7 @@ section {
 }
 .about-container .about-left p {
   line-height: 2rem;
-  color: var(--color-grey-1);
+  color: var(--color-grey-2);
   padding: 1rem 0;
 }
 .about-container .about-left h3 {
@@ -789,7 +789,7 @@ section {
   z-index: -1;
 }
 
-@media screen and (width < 600px) {
+@media screen and (width < 630px) {
   header {
     padding: 0;
   }
@@ -824,7 +824,7 @@ section {
     font-size: 2rem !important;
   }
   .bg-text {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
   }
   .contact-content-con {
     flex-direction: column;

@@ -23,7 +23,7 @@
 .light-mode {
    --color-primary: #f8f8ec;
    --color-secondary: #21bc81;
-   --color-white: #778088;
+   --color-white: #5d656b;
    --color-white2: rgb(156, 165, 173) 8;
 
    --color-black: #000;
@@ -339,7 +339,7 @@ section {
 
       p {
          line-height: 2rem;
-         color: var(--color-grey-1);
+         color: var(--color-grey-2);
          padding: 1rem 0;
       }
 
