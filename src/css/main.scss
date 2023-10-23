@@ -63,7 +63,13 @@ header {
    min-height: 100vh;
    color: var(--color-white);
    overflow: hidden;
+   justify-content: center;
+   align-items: center;
+
+ 
 }
+
+
 
 /* section styles */
 section {
@@ -83,6 +89,8 @@ section {
    &.active {
       display: block;
       animation: slide-in-anim 0.6s ease-in-out;
+      &.section-0{display: flex;
+      }
 
       @keyframes slide-in-anim {
          0% {
@@ -203,7 +211,7 @@ section {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    height: 100%;
-
+   
    .header-left {
       display: flex;
       align-items: center;
