@@ -373,14 +373,13 @@ section {
    }
 
    i {
-      font-size: 10rem;
-      color: var(--color-secondary);
+      font-size: 9rem;
+      color: var(--color-grey-3)
    }
 
    img {
-      width: 10rem;
+      width: 9rem;
    filter: grayscale(100%);
-   filter:sepia()
    }
 
    p {

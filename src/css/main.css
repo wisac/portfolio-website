@@ -346,13 +346,12 @@ section {
   align-items: center;
 }
 .about-stats i {
-  font-size: 10rem;
-  color: var(--color-secondary);
+  font-size: 9rem;
+  color: var(--color-grey-3);
 }
 .about-stats img {
-  width: 10rem;
+  width: 9rem;
   filter: grayscale(100%);
-  filter: sepia();
 }
 .about-stats p {
   padding: 1rem;
@@ -779,6 +778,14 @@ section {
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
   }
+  .about-stats .progress-bars i {
+    font-size: 5rem;
+    color: var(--color-grey-3);
+  }
+  .about-stats .progress-bars img {
+    width: 6rem;
+    filter: grayscale(100%);
+  }
   .projects {
     grid-template-columns: 1fr !important;
     margin-bottom: 6rem;
@@ -883,7 +890,7 @@ section {
     padding-top: 2.5rem;
   }
   .about-stats .progress-bars {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .training {
     grid-template-columns: 1fr;
@@ -954,6 +961,9 @@ section {
   }
   .header-content .header-left .profile-image {
     margin: 0 auto;
+  }
+  .about-stats .progress-bars {
+    grid-template-columns: 1fr 1fr 1fr;
   }
   /**/
   .about-container {

@@ -28,8 +28,21 @@
 
 .about-stats {
    .progress-bars {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; 
+
+
+       i {
+      font-size: 5rem;
+      color: var(--color-grey-3)
    }
+
+   img {
+      width: 6rem;
+   filter: grayscale(100%);
+   }
+   }
+
+
 }
 
 
@@ -108,6 +121,8 @@
    }
 
 
+
+
 .about-container {
    grid-template-columns: 1fr;
    .about-right {
@@ -180,7 +195,7 @@
 
    .about-stats {
    .progress-bars {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
    }
 }
 
@@ -315,6 +330,11 @@
 
 
 
+.about-stats {
+   .progress-bars {
+      grid-template-columns: 1fr 1fr 1fr; 
+   }
+}
    /**/
 
 
