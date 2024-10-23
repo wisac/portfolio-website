@@ -10,19 +10,25 @@ function navClickHandler(e) {
   console.log("clicked");
 }
 
-document.querySelectorAll(".download-btn").forEach(btn=> {
-   btn.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.alert("Please contact me for CV");
-  View.render(4)
-
-})})
+document.querySelectorAll(".download-btn").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.alert("Please contact me for CV");
+    View.render(4);
+  });
+});
 
 let nightMode = false;
 function init() {
   navigatorsContainer.addEventListener("click", navClickHandler);
   document.querySelector(".theme-btn").addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
+    if (!document.body.classList.contains("light-mode")) {
+      localStorage.setItem("mode", "night");
+    } else {
+      localStorage.setItem("mode", "light");
+    }
+
     let day = document.querySelector(".day");
     let night = document.querySelector(".night");
 
@@ -38,6 +44,21 @@ function init() {
   });
 }
 
+//  Check if the user prefers a dark color scheme
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+if (!isDarkMode) {
+  if (localStorage.getItem("mode") != "night") {
+    document.body.classList.add("light-mode");
+    nightMode = false;
+  }
+}
+
+if (localStorage.getItem("mode") == "light") {
+  nightMode = false;
+  document.body.classList.add("light-mode");
+}
+
 //emailjs variables
 const emailTemplateID = "template_zdmmd6s";
 const publicKey = "86IJgs7athT9A2r1_";
@@ -47,7 +68,6 @@ const emailServiceID = "default_service";
 (function () {
   emailjs.init(publicKey);
 })();
-
 
 window.onload = function () {
   const contactForm = document.querySelector(".contact-form");
